@@ -2,6 +2,7 @@
     /* Brand styling */
     --fvt-grey: #101010;
     --fvt-white: #ffffff;
+    --fvt-lightgrey: #c0c0c0;
     --fvt-orange: #ff9401;
     --fvt-red: #ff3636;
 }
@@ -33,10 +34,16 @@
 }
 
 /* https://css-tricks.com/gradient-borders-in-css/ */
-.border-gradient {
+.border-gradient-top {
     border-top: 10px solid;
     border-image-slice: 1;
     border-top-width: 5px;
+}
+
+.border-gradient-bottom {
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-bottom-width: 5px;
 }
 
 .fvt-border {
@@ -62,24 +69,25 @@ main {
 
 #home-hero {
     width: 100%;
-    height: 60vh;
-    background: linear-gradient(
+    height: 24vh;
+    background: var(--fvt-grey);
+    /* background: linear-gradient(
         to right,
         var(--fvt-grey),
-         #1a1a1a 100%
-        );
+         #3a3a3a 100%
+        ); */
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5em;
 
     img {
-        height: 100%;
-        max-width: 50vw;
+        height: 18vh;
     }
 
     h {
-        flex-grow: 1;
-        font-size: 8vh;
+        /* flex-grow: 1; */
+        font-size: 6vh;
         font-weight: 700;
         color: var(--fvt-white);
     }
@@ -98,7 +106,36 @@ main {
     img {
         max-width: 50%;
         border-radius: 1em;
+        /* mask-image: linear-gradient(left top, left bottom, 
+            from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));*/
+        } 
+}
 
+#home-sponsors {
+    /* background: var(--fvt-lightgrey); */
+    background: var(--fvt-white);
+    min-height: 30vh;
+    padding: 2em;
+    h2 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
+#sponsor-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 12.5vw;
+    gap: 2em;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 25vw;
     }
 }
 
