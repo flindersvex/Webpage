@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@theme {
+    --color-fvt-white: #ffffff;
+    --color-fvt-dark-grey: #101010;
+    --color-fvt-orange: #ff9401;
+    --color-fvt-red: #ff3636;
+
+    --color-fvt-orange-l: #ffa528;
+}
+
+/* To auto-compile tailwind css:
+ * npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch
+ */
