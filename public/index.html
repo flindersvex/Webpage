@@ -17,47 +17,59 @@
 <body class="bg-fvt-dark-grey font-[figtree]">
   <!-- HEADER -->
   <header class="flex items-center justify-center my-8">
-    <img src="./images/fvt_logo.svg" alt="FVT Logo" class="h-20">
+    <a href="./index.html" class="active:scale-95 transition-all">
+      <img src="./images/fvt_logo.svg" alt="Logo for the Flinders VEX Team." class="h-20">
+    </a>
   </header>
-  <main class="flex flex-col gap-12 text-fvt-white mb-12 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60">
+  <main class="flex flex-col gap-12 text-fvt-white mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60">
     <!-- HERO -->
     <section class="relative">
       <img src="./images/test.jpg" alt="" class="opacity-30 rounded-2xl">
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
-        <p class="hidden md:block text-2xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics Competition team.</p>
+        <p class="hidden md:block text-2xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
+          Competition team.</p>
       </div>
     </section>
     <!-- SPONSORS -->
-    <section class="flex flex-col">
-      <h2 class="text-fvt-orange text-3xl font-bold tracking-tight">Proudly Supported By</h2>
-      <div class="h-1 w-full rounded-full bg-linear-to-r from-fvt-orange to-fvt-red"></div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8 items-center italic">
+    <section class="flex flex-col gap-6">
+      <h2
+        class="text-3xl font-bold tracking-tight text-fvt-white">
+        Proudly Supported By</h2>
+      <!-- <h2
+        class="text-2xl font-bold tracking-tight bg-linear-to-r from-fvt-orange  to-fvt-red  w-fit text-fvt-dark-grey px-4 py-1 rounded-lg">
+        Proudly Supported By</h2> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center italic">
         <a href="https://www.nviflinders.com.au/" target="_blank" class="flex flex-col items-center">
-          <img src="./images/nvi_logo.png" alt="Sponsor 1 Logo" class="max-h-40 mx-auto">
+          <img src="./images/nvi_logo.png" alt="Logo representing New Venture Institute." class="max-h-40 mx-auto">
           <p>Program Development</p>
         </a>
         <a href="https://www.onshape.com/en/" target="_blank" class="flex flex-col items-center">
-          <img src="./images/onshape_logo.svg" alt="Sponsor 2 Logo" class="max-h-40 mx-auto">
+          <img src="./images/onshape_logo.svg" alt="Logo representing Onshape." class="max-h-40 mx-auto">
           <p>Collegiate Team Program</p>
         </a>
       </div>
     </section>
   </main>
   <!-- FOOTER -->
-  <footer class="flex flex-col items-center justify-center py-12 bg-black gap-6">
-    <!-- <img src="./images/fvt_logo.svg" alt="FVT Logo" class="h-40"> -->
-    <p class="text-fvt-orange text-7xl font-black -tracking-widest">FVT</p>
-    <div class="flex gap-4 font-semibold text-xl items-center">
+  <footer
+    class="flex flex-col gap-6 sm:flex-row items-center justify-between py-6 bg-black px-4 lg:px-12 xl:px-40 2xl:px-60">
+
+    <p class="text-fvt-white font-medium text-lg select-none">Flinders VEX Team</p>
+
+    <div class="flex gap-4 font-medium text-lg items-center">
+
       <a href="https://fusa.edu.au/clubslist/59654/vex-team/" target="_blank"
-        class="bg-fvt-orange h-11 py-2 px-4 rounded-2xl flex gap-2 items-center hover:bg-fvt-orange-l transition-all active:scale-95">
+        class="h-10 px-4 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
         <div>FUSA Club Page</div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3.5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
           <path fill="currentColor"
             d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.3 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32zM80 96c-44.2 0-80 35.8-80 80v256c0 44.2 35.8 80 80 80h256c44.2 0 80-35.8 80-80v-80c0-17.7-14.3-32-32-32s-32 14.3-32 32v80c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h80c17.7 0 32-14.3 32-32s-14.3-32-32-32z" />
         </svg>
       </a>
-      <a href="mailto:flindersvexteam@gmail.com" class="bg-fvt-orange w-11 p-2 rounded-2xl hover:bg-fvt-orange-l transition-all active:scale-95">
+
+      <a href="mailto:flindersvexteam@gmail.com"
+        class="h-10 p-2 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
           <g fill="none" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" d="M21 12a9 9 0 1 0-6.67 8.693" />
@@ -66,11 +78,15 @@
           </g>
         </svg>
       </a>
-      <a href="https://www.instagram.com/flindersvex/" target="_blank" class="bg-fvt-orange w-11 p-2 rounded-2xl hover:bg-fvt-orange-l transition-all active:scale-95"><svg
+
+      <a href="https://www.instagram.com/flindersvex/" target="_blank"
+        class="h-10 p-2 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
           xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
           <path fill="currentColor"
             d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
-        </svg></a>
+        </svg>
+      </a>
+
     </div>
   </footer>
 </body>
