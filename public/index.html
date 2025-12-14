@@ -14,53 +14,107 @@
   <link href="./fonts/figtree.css" rel="stylesheet">
 </head>
 
-<body class="bg-fvt-dark-grey font-[figtree]">
+<body class="bg-neutral-950 text-neutral-50 font-[figtree]">
   <!-- HEADER -->
-  <header class="flex items-center justify-center my-8">
+  <!-- <header class="flex items-center justify-center my-8">
     <a href="./index.html" class="active:scale-95 transition-all">
       <img src="./images/fvt_logo.svg" alt="Logo for the Flinders VEX Team." class="h-20">
     </a>
-  </header>
-  <main class="flex flex-col gap-12 text-fvt-white mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60">
-    <!-- HERO -->
-    <section class="relative">
-      <img src="./images/test.jpg" alt="" class="opacity-30 rounded-2xl">
-      <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
-        <p class="hidden md:block text-2xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
-          Competition team.</p>
-      </div>
-    </section>
-    <!-- SPONSORS -->
+  </header> -->
+
+  <!-- HERO -->
+  <section class="relative">
+    <img src="./images/test.jpg" alt="" class="opacity-30">
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-neutral-950 to-transparent"></div>
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center ">
+      <img src="./images/fvt_logo.svg" alt="Logo for the Flinders VEX Team." class="h-16 md:h-32 mb-4">
+      <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
+      <p class="hidden md:block text-2xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
+        Competition team.</p>
+    </div>
+  </section>
+
+  <main class="flex flex-col gap-24 mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60 my-4">
+
+    <!-- PUSH BACK RESULTS -->
     <section class="flex flex-col gap-6">
-      <h2
-        class="text-3xl font-bold tracking-tight text-fvt-white">
+      <h2 class="text-4xl font-bold tracking-tight text-neutral-500">
+        Recent Events</h2>
+      <article class="flex flex-col md:flex-row gap-4">
+        <div class="bg-fvt-dark-grey border-neutral-900 border p-6 pb-12 rounded-2xl flex flex-col gap-8">
+          <div class="flex gap-4 text-sm">
+            <p class="w-fit px-2 py-0.5 rounded-lg text-neutral-500 border border-neutral-500 italic">December 2025</p>
+            <p class="w-fit px-2 py-0.5 rounded-lg text-neutral-500 border border-neutral-500 italic">Competition</p>
+          </div>
+          <hgroup class="flex gap-4 flex-col">
+            <!-- placeholder text for now, third person may be a bit weird - change later -->
+            <h3 class="text-3xl font-bold tracking-tight">Australian National Championship 2025-2026</h3>
+            <p class="text-lg">During December 2025, FVT competed at the Australian National Championships in Adelaide
+              to fight for the spot to go to the World Championship in St. Louis, Missouri. Although FVT did not
+              qualify,
+              the team was very happy to place second overall in qualification matches, making it to the semifinals!
+            </p>
+          </hgroup>
+          <div class="flex flex-col gap-4 md:flex-row justify-evenly text-center text-xl font-semibold items-center">
+            <div class="flex flex-col items-center text-fvt-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="w-32">
+                <path fill="currentColor"
+                  d="M11 10h2c1.414 0 2.121 0 2.56.44c.44.439.44 1.146.44 2.56v6c0-1.414 0-2.121.44-2.56C16.878 16 17.585 16 19 16s2.121 0 2.56.44c.44.439.44 1.146.44 2.56v3H2c0-1.414 0-2.121.44-2.56C2.878 19 3.585 19 5 19s2.121 0 2.56.44C8 19.878 8 20.585 8 22v-9c0-1.414 0-2.121.44-2.56C8.878 10 9.585 10 11 10m.146-6.977C11.526 2.34 11.716 2 12 2s.474.34.854 1.023l.098.176c.108.194.162.29.246.354c.085.064.19.088.4.135l.19.044c.738.167 1.107.25 1.195.532s-.164.577-.667 1.165l-.13.152c-.143.167-.215.25-.247.354s-.021.215 0 .438l.02.203c.076.785.114 1.178-.115 1.352c-.23.175-.576.015-1.267-.303l-.178-.082c-.197-.09-.295-.136-.399-.136s-.202.046-.399.136l-.178.082c-.691.318-1.037.478-1.267.303c-.23-.174-.191-.567-.115-1.352l.02-.203c.021-.223.032-.334 0-.438s-.104-.187-.247-.354l-.13-.152c-.503-.588-.755-.882-.667-1.165c.088-.282.457-.365 1.195-.532l.19-.044c.21-.047.315-.07.4-.135c.084-.064.138-.16.246-.354z" />
+              </svg>
+              <p>Placed 2nd overall; 5W 2L</p>
+            </div>
+            <p class="text-fvt-orange text-6xl">+</p>
+            <div class="flex flex-col items-center text-fvt-orange">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" class="w-32">
+                <path fill="currentColor"
+                  d="M7 21v-2h4v-3.1q-1.225-.275-2.187-1.037T7.4 12.95q-1.875-.225-3.137-1.637T3 8V7q0-.825.588-1.412T5 5h2V3h10v2h2q.825 0 1.413.588T21 7v1q0 1.9-1.263 3.313T16.6 12.95q-.45 1.15-1.412 1.913T13 15.9V19h4v2zm0-10.2V7H5v1q0 .95.55 1.713T7 10.8m10 0q.9-.325 1.45-1.088T19 8V7h-2z" />
+              </svg>
+              <p>Tournament Semifinalist</p>
+            </div>
+          </div>
+        </div>
+        <img src="./images/robot.jpg"
+          alt="Photo of the Flinders VEX Team at the Australian National Championship 2025-2026."
+          class=" w-full h-full md:h-auto object-cover rounded-2xl shrink-0 basis-1/2">
+      </article>
+
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="flex flex-col gap-12">
+      <h2 class="text-4xl font-bold tracking-tight text-neutral-500">
         Proudly Supported By</h2>
-      <!-- <h2
-        class="text-2xl font-bold tracking-tight bg-linear-to-r from-fvt-orange  to-fvt-red  w-fit text-fvt-dark-grey px-4 py-1 rounded-lg">
-        Proudly Supported By</h2> -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center italic">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <a href="https://www.nviflinders.com.au/" target="_blank" class="flex flex-col items-center">
-          <img src="./images/nvi_logo.png" alt="Logo representing New Venture Institute." class="max-h-40 mx-auto">
-          <p>Program Development</p>
+          <img src="./images/nvi_logo.png" alt="Logo representing New Venture Institute." class="max-h-35">
         </a>
         <a href="https://www.onshape.com/en/" target="_blank" class="flex flex-col items-center">
-          <img src="./images/onshape_logo.svg" alt="Logo representing Onshape." class="max-h-40 mx-auto">
-          <p>Collegiate Team Program</p>
+          <img src="./images/flinders_logo.png" alt="Logo representing Flinders University." class="max-h-24">
+        </a>
+        <a href="https://www.onshape.com/en/" target="_blank" class="flex flex-col items-center">
+          <img src="./images/onshape_logo.svg" alt="Logo representing Onshape." class="max-h-46">
+        </a>
+        <a href="https://www.onshape.com/en/" target="_blank" class="flex flex-col items-center">
+          <img src="./images/datta_logo.svg" alt="Logo representing DATTA SA." class="max-h-30">
         </a>
       </div>
     </section>
   </main>
+
   <!-- FOOTER -->
   <footer
-    class="flex flex-col gap-6 sm:flex-row items-center justify-between py-6 bg-black px-4 lg:px-12 xl:px-40 2xl:px-60">
+    class="flex flex-col gap-6 sm:flex-row items-center justify-between bg-fvt-dark-grey border-neutral-900 border rounded-2xl py-4 my-4 px-4 lg:mx-12 xl:mx-40 2xl:mx-60">
 
-    <p class="text-fvt-white font-medium text-lg select-none">Flinders VEX Team</p>
+    <a href="/"
+      class="flex gap-2 items-center hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 h-10 px-4 rounded-xl">
+      <img src="./images/fvt_logo.svg" alt="Logo for the Flinders VEX Team." class="h-6">
+      <p class="font-medium text-lg select-none">Flinders VEX Team</p>
+    </a>
 
     <div class="flex gap-4 font-medium text-lg items-center">
 
       <a href="https://fusa.edu.au/clubslist/59654/vex-team/" target="_blank"
-        class="h-10 px-4 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
+        class="h-10 px-4 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
         <div>FUSA Club Page</div>
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
           <path fill="currentColor"
@@ -69,7 +123,7 @@
       </a>
 
       <a href="mailto:flindersvexteam@gmail.com"
-        class="h-10 p-2 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
+        class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
           <g fill="none" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" d="M21 12a9 9 0 1 0-6.67 8.693" />
@@ -80,7 +134,7 @@
       </a>
 
       <a href="https://www.instagram.com/flindersvex/" target="_blank"
-        class="h-10 p-2 flex gap-2 items-center bg-fvt-dark-grey rounded-xl text-fvt-white hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
+        class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
           xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
           <path fill="currentColor"
             d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
