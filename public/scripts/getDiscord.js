@@ -1,6 +1,6 @@
 // Get Discord invite link using the server widget JSON API
 async function getDiscord() {
-  const serverID = "123";
+  const serverID = "123"; //todo: add server id
   try {
     const response = await fetch(`https://discord.com/api/guilds/${serverID}/widget.json`);
     if (!response.ok) {

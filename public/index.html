@@ -4,23 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./styles/output.css" rel="stylesheet">
-  <title>FVT Robotics</title>
+  <link rel="stylesheet" href="./styles/output.css">
+
+  <link rel="preload" href="./fonts/figtree.css" as="style" type="text/css" />
+  <link rel="preload" href="./fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./fonts/figtree.css">
 
   <link rel="icon" type="image/png" href="./favicon.png" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 
-  <link rel="preload" href="./fonts/figtree.css" as="style" type="text/css" />
-  <link rel="preload" href="./fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link href="./fonts/figtree.css" rel="stylesheet">
+  <title>FVT Robotics</title>
+  <meta name="description"
+    content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia. Currently, FVT is the only VEX U team in SA." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FVT Robotics" />
+  <meta property="og:description"
+    content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia. Currently, FVT is the only VEX U team in SA." />
+  <meta property="og:url" content="https://flindersvex.com/" />
+  <meta property="og:image" content="https://flindersvex.com/images/hero.jpg" />
+  <meta property="og:image:alt" content="Photo of two people inspecting a VEX robot." /> <!--todo: switch image -->
 </head>
 
 <body class="bg-neutral-950 text-neutral-50 font-[figtree] selection:bg-fvt-orange selection:text-neutral-900">
 
   <!-- HERO -->
   <header class="relative">
-    <img src="./images/hero.jpg" alt="" class="opacity-30">
+    <img src="./images/hero.jpg" alt="Photo of two people inspecting a VEX robot." class="opacity-30"> <!--todo: switch image -->
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-neutral-950 to-transparent"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center mb-10 md:mb-20">
       <img src="./favicon.svg"
@@ -50,14 +61,13 @@
           </div>
 
           <hgroup class="flex gap-4 flex-col">
-            <!-- placeholder text for now, third person may be a bit weird - change later -->
             <h3 class="text-2xl md:text-3xl font-bold tracking-tight">Australian National Championship 2025-2026</h3>
             <p class="text-base md:text-lg">During December 2025, FVT competed at the Australian National Championships
               in Adelaide
               to fight for the spot to go to the World Championship in St. Louis, Missouri. Although FVT did not
               qualify,
               the team was very happy to place second overall in qualification matches, making it to the semifinals!
-            </p>
+            </p> <!--todo: update text if needed -->
           </hgroup>
 
           <div class="flex gap-4 justify-evenly text-center text-base md:text-xl font-semibold items-center">
@@ -84,7 +94,7 @@
 
         </div>
         <img src="./images/nationals2025.jpg" alt="Picture of a black and yellow robot."
-          class=" w-full h-full md:h-auto object-cover rounded-2xl shrink-0 basis-1/2">
+          class=" w-full h-full md:h-auto object-cover rounded-2xl shrink-0 basis-1/2"> <!--todo: switch photo -->
 
       </article>
     </section>
