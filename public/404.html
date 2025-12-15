@@ -5,11 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>404 - FVT Robotics</title>
+  <link rel="icon" type="image/svg+xml" href="./images/fvt_logo.svg" />
+
+  <link rel="preload" href="./fonts/figtree.css" as="style" type="text/css" />
+  <link rel="preload" href="./fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link href="./fonts/figtree.css" rel="stylesheet">
 </head>
 
-<body>
-  <main class="flex flex-col items-center justify-center min-h-screen text-fvt-white bg-fvt-dark-grey">
-    <h1 class="text-4xl font-bold">404 Not Found</h1>
+<body class="bg-neutral-950 text-neutral-500 font-[figtree] selection:bg-fvt-orange selection:text-neutral-900">
+  <main class="flex items-center justify-center min-h-screen flex-col gap-6">
+    <hgroup class="flex items-center justify-center flex-col border border-neutral-500 rounded-4xl p-24 border-dashed">
+      <h1 class="text-6xl font-bold tracking-tight">404</h1>
+      <p class="text-2xl font-bold tracking-tight">Not found</p>
+    </hgroup>
+    <a href="/"
+      class="select-none text-neutral-50 h-10 px-4 flex items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 font-semibold">
+      <div>Go to FVT Homepage</div>
+    </a>
   </main>
 </body>
 
