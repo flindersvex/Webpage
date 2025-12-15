@@ -7,7 +7,3 @@
 
     --color-fvt-orange-l: #ffa528;
 }
-
-/* To auto-compile tailwind css:
- * npx @tailwindcss/cli -i ./public/input.css -o ./public/output.css --watch
- */
