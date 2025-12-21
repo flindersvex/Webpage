@@ -21,25 +21,31 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="FVT Robotics" />
   <meta property="og:description"
-    content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia. Currently, FVT is the only VEX U team in SA." />
+    content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia." />
   <meta property="og:url" content="https://flindersvex.com/" />
   <meta property="og:image" content="https://flindersvex.com/images/hero.jpg" />
-  <meta property="og:image:alt" content="Photo of two people inspecting a VEX robot." /> <!--todo: switch image -->
+  <meta property="og:image:alt" content="Photo of two people inspecting a VEX robot." /> <!--todo: switch image, change alt text -->
 </head>
+
+<!--todo: enable server widget api in discord server-->
 
 <body class="bg-neutral-950 text-neutral-50 font-[figtree] selection:bg-fvt-orange selection:text-neutral-900">
 
   <!-- HERO -->
   <header class="relative">
-    <img src="./images/hero.jpg" alt="Photo of two people inspecting a VEX robot." class="opacity-30"> <!--todo: switch image -->
+    <img src="./images/hero.jpg" alt="Photo of two people inspecting a VEX robot." class="opacity-30 w-full"> <!--todo: switch image, change alt text -->
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-neutral-950 to-transparent"></div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center mb-10 md:mb-20">
+    <div class="absolute inset-0 flex items-center justify-center text-center">
+      <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
       <img src="./favicon.svg"
         alt="White letters 'FVT', with a black outline and shadow on top of an orange to red gradient. The logo representing Flinders VEX Team."
-        class="h-16 md:h-32 mb-4">
-      <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
-      <p class="hidden md:block text-2xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
+        class="h-16 md:h-30 translate-y-0.5">
+      <div class="flex flex-col items-baseline">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
+        <p class="hidden md:block text-xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
         Competition team.</p>
+      </div>
+      </div>
     </div>
   </header>
 
@@ -94,7 +100,7 @@
 
         </div>
         <img src="./images/nationals2025.jpg" alt="Picture of a black and yellow robot."
-          class=" w-full h-full md:h-auto object-cover rounded-2xl shrink-0 basis-1/2"> <!--todo: switch photo -->
+          class=" w-full h-full md:h-auto object-cover rounded-2xl shrink-0 basis-1/2"> <!--todo: switch photo, change alt text -->
 
       </article>
     </section>
@@ -124,8 +130,7 @@
         <p class="text-base md:text-lg">No matter your background, if you're passionate about robotics and eager to
           learn, we welcome
           you to join
-          FVT! Reach out to us at our <a data-discord-invite href="/" class="text-fvt-orange underline">Discord
-            Server</a>.
+          FVT! Reach out to us at our <a data-discord-invite href="/" class="text-fvt-orange underline hover:text-fvt-orange-l transition-all">Team Discord</a>.
         </p>
       </section>
 
@@ -137,7 +142,7 @@
           or
           general questions,
           please email us at
-          <a href="mailto:flindersvexteam@gmail.com" class="text-fvt-orange underline">flindersvexteam@gmail.com</a>.
+          <a href="mailto:flindersvexteam@gmail.com" class="text-fvt-orange underline hover:text-fvt-orange-l transition-all">flindersvexteam@gmail.com</a>.
         </p>
       </section>
     </div>

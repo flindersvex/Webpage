@@ -1,4 +1,5 @@
 {
+  "name": "fvt-website",
   "scripts": {
     "tw": "npx @tailwindcss/cli -i ./public/styles/input.css -o ./public/styles/output.css --watch"
   },
