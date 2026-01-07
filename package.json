@@ -1,7 +1,7 @@
 {
   "name": "fvt-website",
   "scripts": {
-    "tw": "npx @tailwindcss/cli -i ./public/styles/input.css -o ./public/styles/output.css --watch"
+    "tw": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",

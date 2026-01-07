@@ -14,6 +14,10 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 
+  <!-- <script src="./scripts/changeSubtitle.js" defer /> // Pondering whether to actually implement this -->
+  <script src="./scripts/getDiscord.js" defer></script>
+
+
   <title>FVT Robotics</title>
   <meta name="description"
     content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia. Currently, FVT is the only VEX U team in SA." />
@@ -42,7 +46,7 @@
         class="h-16 md:h-30 translate-y-0.5">
       <div class="flex flex-col items-baseline">
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
-        <p class="hidden md:block text-xl lg:text-3xl font-bold tracking-tight">South Australia's first VEX U Robotics
+        <p class="hidden md:block text-xl lg:text-3xl font-bold tracking-tight">South Australia's <span id="changingSubtitle">first</span> VEX U Robotics
         Competition team.</p>
       </div>
       </div>
@@ -54,7 +58,7 @@
 
     <!-- RECENT EVENTS -->
     <section class="flex flex-col gap-6">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-500">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">
         Recent Events</h2>
 
       <!-- Nationals 2025 -->
@@ -107,7 +111,7 @@
 
     <!-- SPONSORS -->
     <section class="flex flex-col gap-12">
-      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-500">
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">
         Proudly Supported By</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <img src="./images/nvi_logo.svg"
@@ -125,7 +129,7 @@
 
       <!-- Looking for members -->
       <section class="flex flex-col gap-2 md:gap-6">
-        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-500">
+        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-300">
           We're looking for members!</h3>
         <p class="text-base md:text-lg">No matter your background, if you're passionate about robotics and eager to
           learn, we welcome
@@ -136,7 +140,7 @@
 
       <!-- Contact us -->
       <section class="flex flex-col gap-2 md:gap-6">
-        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-500">
+        <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-300">
           Contact Us</h3>
         <p class="text-base md:text-lg">If you would like to contact us for sponsorship opportunities, media inquiries,
           or
@@ -189,7 +193,7 @@
 
         <!-- Email (icon-only) -->
         <a href="mailto:flindersvexteam@gmail.com"
-          class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
+          class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 ">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
               d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z" />
@@ -197,7 +201,7 @@
         </a>
 
         <!-- Discord (icon-only) -->
-        <a data-discord-invite href="/"
+        <a data-discord-invite href="/" target="_blank"
           class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -227,7 +231,6 @@
     </div>
   </footer>
 
-  <script src="./scripts/getDiscord.js"></script>
 
 </body>
 
