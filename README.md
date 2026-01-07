@@ -1,8 +1,8 @@
 # FVT Website
 
 ### To-do
-- [ ] Decide on hero image + alt
-- [ ] Change social link image + alt
-- [ ] Change robot image + alt
+- [x] Decide on hero image + alt
+- [x] Change social link image + alt
+- [x] Change robot image + alt
 - [ ] Enable discord widget api
 - [ ] Enter server id
