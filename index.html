@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/output.css?ver=1.5">
+  <link rel="stylesheet" href="./styles/output.css?ver=1.6">
 
   <link rel="preload" href="./fonts/figtree.css" as="style" type="text/css" />
   <link rel="preload" href="./fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
@@ -57,9 +57,9 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main class="flex flex-col gap-18 md:gap-24 mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60 my-4">
+  <main class="flex flex-col gap-18 md:gap-24 mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60 my-4 items-center">
     
-    <section class="flex flex-col gap-6 items-center mr-4 ml-4  relative bottom-00" >
+    <section class="flex flex-col gap-6 items-center mr-4 ml-4 relative bottom-00" >
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Interested in joining?</h2>
       <p class="text-center lg:max-w-[65vw]">We're always looking for new members, and welcome students of any experience level. No matter your background, degree, or interests, if you're passionate about robotics and eager to learn, we welcome you to join FVT!</p>
       <div class="flex flex-col sm:flex-row gap-6">
@@ -74,16 +74,16 @@
       </div>
     </section>
 
-    <section class="flex flex-col lg:flex-row gap-6 justify-between items-center">
-      <div class="flex flex-col gap-4 max-w-[90vw] lg:max-w-[30%]">
+    <section class="flex flex-col xl:flex-row gap-6 justify-around xl:justify-center xl:gap-20 items-center">
+      <div class="flex flex-col gap-4 max-w-[90vw] lg:max-w-[60%] xl:max-w-100">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">Upcoming events</h2>
         <p>We're always planning something new. Check out our upcoming events on this shared calendar, and if you're interested, add them to yours!</p>
       </div>
-      <iframe class="max-w-[90vw] max-h-[50vh] md:max-h-full rounded-2xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FAdelaide&showPrint=0&mode=AGENDA&src=YmRjMWYyMWFiZmVjODRhYjlmY2NlZGU2M2Q5NzY2OTI0MjliZDMyMDA4NWU5ODJiZDY4YTVlNzQxM2IzNThmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDFhYjY1MDZmYWVmOTVjNDZiZGE3MWNlN2I2NTdlMDc3MzJkYmQyYWU3ODIzYzkyNDRkOWRiMzc1ZGFlMTU3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%23009688" style="border-width:0" width="1200" height="600" frameborder="0" scrolling="no"></iframe>
+      <iframe class="max-w-[90vw] max-h-[50vh] md:max-h-full lg:max-w-[60vw] rounded-2xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FAdelaide&showPrint=0&mode=AGENDA&src=YmRjMWYyMWFiZmVjODRhYjlmY2NlZGU2M2Q5NzY2OTI0MjliZDMyMDA4NWU5ODJiZDY4YTVlNzQxM2IzNThmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDFhYjY1MDZmYWVmOTVjNDZiZGE3MWNlN2I2NTdlMDc3MzJkYmQyYWU3ODIzYzkyNDRkOWRiMzc1ZGFlMTU3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%23009688" style="border-width:0" width="1200" height="600" frameborder="0" scrolling="no"></iframe>
     </section>  
     
     <!-- RECENT EVENTS -->
-    <section class="flex flex-col gap-6">
+    <section class="flex flex-col gap-6 2xl:max-w-[70vw]">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">
         Recent Events</h2>
 
@@ -142,8 +142,8 @@
     <section class="flex flex-col gap-12">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">
         Proudly Supported By</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <a href="https://www.nviflinders.com.au/" target="_blank" class="max-h-20 mx-auto md:col-span-2">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center">
+        <a href="https://www.nviflinders.com.au/" target="_blank" class="max-h-20 mx-auto md:col-span-2 xl:col-span-1">
           <img src="./images/nvi_logo.svg"
           alt="Logo representing New Venture Institute, accompanied by the Flinders University logo to the left."
           class="w-150 max-h-20 mx-auto md:col-span-2">
@@ -193,7 +193,7 @@
 
   <!-- FOOTER -->
   <footer
-    class="flex flex-col gap-6 lg:flex-row items-center justify-between bg-fvt-dark-grey border-neutral-900 border rounded-3xl py-4 my-4 mx-4 px-4 lg:mx-12 xl:mx-40 2xl:mx-60 select-none">
+    class="flex flex-col gap-6 lg:flex-row items-center justify-between bg-fvt-dark-grey border-neutral-900 border rounded-3xl py-4 my-4 mx-4 px-4 lg:mx-12 xl:mx-40 2xl:mx-60 select-none 2xl:px-[10vw]">
       <a href="/"
         class="flex gap-2 items-center hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 h-10 px-4 rounded-xl">
         <img src="./favicon.svg"
