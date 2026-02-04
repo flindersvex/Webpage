@@ -213,9 +213,6 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
@@ -237,23 +234,11 @@
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
-  .bottom-20 {
-    bottom: calc(var(--spacing) * 20);
-  }
-  .bottom-40 {
-    bottom: calc(var(--spacing) * 40);
-  }
-  .bottom-\[10vh\] {
-    bottom: 10vh;
-  }
   .bottom-\[20vh\] {
     bottom: 20vh;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
-  }
-  .m-4 {
-    margin: calc(var(--spacing) * 4);
   }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
@@ -313,15 +298,6 @@
   .max-h-\[50vh\] {
     max-height: 50vh;
   }
-  .max-h-\[50vw\] {
-    max-height: 50vw;
-  }
-  .max-h-\[70vh\] {
-    max-height: 70vh;
-  }
-  .max-h-\[70vw\] {
-    max-height: 70vw;
-  }
   .max-h-full {
     max-height: 100%;
   }
@@ -333,9 +309,6 @@
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
@@ -351,9 +324,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .max-w-\[30\%\] {
-    max-width: 30%;
   }
   .max-w-\[90vw\] {
     max-width: 90vw;
@@ -373,12 +343,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .place-items-center-safe {
-    place-items: safe center;
-  }
-  .content-between {
-    align-content: space-between;
   }
   .items-baseline {
     align-items: baseline;
@@ -437,10 +401,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-b-2 {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 2px;
-  }
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
@@ -461,9 +421,6 @@
   .border-rubric-pink-dark {
     border-color: var(--color-rubric-pink-dark);
   }
-  .border-white {
-    border-color: var(--color-white);
-  }
   .bg-discord-blurple {
     background-color: var(--color-discord-blurple);
   }
@@ -478,9 +435,6 @@
   }
   .bg-rubric-pink {
     background-color: var(--color-rubric-pink);
-  }
-  .bg-rubric-pink-dark {
-    background-color: var(--color-rubric-pink-dark);
   }
   .bg-linear-to-t {
     --tw-gradient-position: to top;
@@ -523,9 +477,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .align-middle {
-    vertical-align: middle;
   }
   .font-\[figtree\] {
     font-family: figtree;
@@ -701,16 +652,6 @@
       width: calc(var(--spacing) * 50);
     }
   }
-  .sm\:w-\[90vw\] {
-    @media (width >= 40rem) {
-      width: 90vw;
-    }
-  }
-  .sm\:max-w-\[30\%\] {
-    @media (width >= 40rem) {
-      max-width: 30%;
-    }
-  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
@@ -739,16 +680,6 @@
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
-    }
-  }
-  .md\:max-w-40 {
-    @media (width >= 48rem) {
-      max-width: calc(var(--spacing) * 40);
-    }
-  }
-  .md\:max-w-\[30\%\] {
-    @media (width >= 48rem) {
-      max-width: 30%;
     }
   }
   .md\:max-w-\[50vw\] {
@@ -883,16 +814,6 @@
   .xl\:mx-40 {
     @media (width >= 80rem) {
       margin-inline: calc(var(--spacing) * 40);
-    }
-  }
-  .xl\:opacity-0 {
-    @media (width >= 80rem) {
-      opacity: 0%;
-    }
-  }
-  .xl\:opacity-100 {
-    @media (width >= 80rem) {
-      opacity: 100%;
     }
   }
   .\32 xl\:mx-60 {
