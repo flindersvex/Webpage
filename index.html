@@ -14,7 +14,7 @@
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 
-  <!-- <script src="./scripts/changeSubtitle.js" defer /> // Pondering whether to actually implement this -->
+  <script src="./scripts/changeSubtitle.js" defer /> // Pondering whether to actually implement this
   <script src="./scripts/getDiscord.js" defer></script>
 
   <title>FVT Robotics</title>
@@ -45,17 +45,43 @@
         class="h-16 md:h-30 translate-y-0.5">
       <div class="flex flex-col items-baseline">
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter">Flinders VEX Team</h1>
-        <p class="hidden md:block text-xl lg:text-3xl font-bold tracking-tight">South Australia's <span id="changingSubtitle">first</span> VEX U Robotics
+        <p class="hidden md:block text-xl lg:text-3xl font-bold tracking-tight">South Australia's <span id="changingSubtitle" class="cursor-pointer">first</span> VEX U Robotics
         Competition team.</p>
       </div>
       </div>
     </div>
-    <p class="bottom-10 absolute right-10 opacity-50 hidden sm:inline text-xs">Photo courtesy of <a class="underline" href="https://flashgordonphotog.com.au/">Flash Gordon Photography</a></p>
+    <svg class="size-6 absolute opacity-0 lg:opacity-100 bottom-[20vh] w-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+    </svg>
+    <p class="bottom-10 absolute right-10 opacity-50 hidden sm:inline text-xs">Photo courtesy of <a class="underline" href="https://flashgordonphotog.com.au/" target="_blank">Flash Gordon Photography</a></p>
   </header>
 
   <!-- MAIN CONTENT -->
   <main class="flex flex-col gap-18 md:gap-24 mb-24 mx-4 lg:mx-12 xl:mx-40 2xl:mx-60 my-4">
+    
+    <section class="flex flex-col gap-6 items-center mr-4 ml-4  relative bottom-00" >
+      <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">Interested in joining?</h2>
+      <p class="text-center lg:max-w-[65vw]">We're always looking for new members, and welcome students of any experience level. No matter your background, degree, or interests, if you're passionate about robotics and eager to learn, we welcome you to join FVT!</p>
+      <div class="flex flex-col sm:flex-row gap-6">
+        <div class="w-[90vw] sm:w-50 flex flex-col items-center gap-2">
+          <p class="italic">Register as a member</p>
+          <a href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank" class="flex w-full justify-center items-center bg-rubric-pink p-2 rounded-lg h-12 border-b-4 border-rubric-pink-dark"><img src="images/rubric-cropped.png" class="h-[80%] relative right-2"></img>Rubric</a>
+        </div>
+        <div class="w-[90vw] sm:w-50 flex flex-col items-center gap-2">
+          <p class="italic">Join our community</p>
+          <a href="https://discord.com/invite/dyVrqnzw" target="_blank" class="flex w-full justify-center gap-2 items-center bg-discord-blurple p-2 rounded-lg h-12 border-b-4 border-discord-blurple-dark"><img src="images/discord-logo-white.png" class="h-[80%] relative"></img>Discord</a>
+        </div>
+      </div>
+    </section>
 
+    <section class="flex flex-col lg:flex-row gap-6 justify-between items-center">
+      <div class="flex flex-col gap-4 max-w-[90vw] lg:max-w-[30%]">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">Upcoming events</h2>
+        <p>We're always planning something new. Check out our upcoming events on this shared calendar, and if you're interested, add them to yours!</p>
+      </div>
+      <iframe class="max-w-[90vw] max-h-[50vh] md:max-h-full rounded-2xl" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FAdelaide&showPrint=0&mode=AGENDA&src=YmRjMWYyMWFiZmVjODRhYjlmY2NlZGU2M2Q5NzY2OTI0MjliZDMyMDA4NWU5ODJiZDY4YTVlNzQxM2IzNThmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDFhYjY1MDZmYWVmOTVjNDZiZGE3MWNlN2I2NTdlMDc3MzJkYmQyYWU3ODIzYzkyNDRkOWRiMzc1ZGFlMTU3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%23009688" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>  
+    
     <!-- RECENT EVENTS -->
     <section class="flex flex-col gap-6">
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-neutral-300">
@@ -140,7 +166,7 @@
     <div class="flex flex-col md:flex-row justify-between gap-12">
 
       <!-- Looking for members -->
-      <section class="flex flex-col gap-2 md:gap-6">
+      <!-- <section class="flex flex-col gap-2 md:gap-6">
         <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-300">
           We're looking for members!</h3>
         <p class="text-base md:text-lg">No matter your background, degree, or interests, if you're passionate about robotics and eager to
@@ -148,13 +174,13 @@
           you to join
           FVT! Reach out to us at our <a data-discord-invite href="/" class="text-fvt-orange underline hover:text-fvt-orange-l transition-all">Team Discord</a>.
         </p>
-      </section>
+      </section> -->
 
       <!-- Contact us -->
-      <section class="flex flex-col gap-2 md:gap-6">
+      <section class="flex flex-col gap-2 md:gap-6 w-full items-center">
         <h3 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-300">
           Contact Us</h3>
-        <p class="text-base md:text-lg">If you would like to contact us for sponsorship opportunities, media enquiries,
+        <p class="text-base md:text-lg text-center md:max-w-[50vw]">If you would like to contact us for sponsorship opportunities, media enquiries,
           or
           general questions,
           please email us at
@@ -238,10 +264,9 @@
               d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
           </svg>
         </a>
-      
       </div>
     </div>
-    <p class="sm:hidden text-xs">Header photo courtesy of <a class="underline" href="https://flashgordonphotog.com.au/">Flash Gordon Photography</a></p>
+    <p class="sm:hidden text-xs">Header photo courtesy of <a class="underline" href="https://flashgordonphotog.com.au/" target="_blank">Flash Gordon Photography</a></p>
      
   </footer>
 </body>
