@@ -16,6 +16,7 @@
 
   <script src="./scripts/changeSubtitle.js" defer /> // Pondering whether to actually implement this
   <script src="./scripts/getDiscord.js" defer></script>
+  <script src="./scripts/analytics.js" defer></script>
 
   <title>FVT Robotics</title>
   <meta name="description"
@@ -65,11 +66,11 @@
       <div class="flex flex-col sm:flex-row gap-6">
         <div class="w-[90vw] sm:w-50 flex flex-col items-center gap-2">
           <p class="italic">Register as a member</p>
-          <a href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank" class="font-bold flex w-full justify-center items-center bg-rubric-pink p-2 rounded-lg h-12 border-b-4 border-rubric-pink-dark"><img src="images/rubric-cropped.png" class="h-[80%] relative right-2"></img>Rubric</a>
+          <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank" class="font-bold flex w-full justify-center items-center bg-rubric-pink p-2 rounded-lg h-12 border-b-4 border-rubric-pink-dark"><img src="images/rubric-cropped.png" class="h-[80%] relative right-2"></img>Rubric</a>
         </div>
         <div class="w-[90vw] sm:w-50 flex flex-col items-center gap-2">
           <p class="italic">Join our community!</p>
-          <a href="https://discord.com/invite/dyVrqnzw" target="_blank" class="font-bold flex w-full justify-center gap-2 items-center bg-discord-blurple p-2 rounded-lg h-12 border-b-4 border-discord-blurple-dark"><img src="images/discord-logo-white.png" class="h-[80%] relative"></img>Discord</a>
+          <a id="joining-discord-button" href="https://discord.com/invite/dyVrqnzw" target="_blank" class="font-bold flex w-full justify-center gap-2 items-center bg-discord-blurple p-2 rounded-lg h-12 border-b-4 border-discord-blurple-dark"><img src="images/discord-logo-white.png" class="h-[80%] relative"></img>Discord</a>
         </div>
       </div>
     </section>
