@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1HG2XD614"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T1HG2XD614');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/output.css?ver=1.7">
@@ -13,10 +21,6 @@
   <link rel="icon" type="image/png" href="./favicon.png" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-
-  <script src="./scripts/changeSubtitle.js" defer /> // Pondering whether to actually implement this
-  <script src="./scripts/getDiscord.js" defer></script>
-  <script src="./scripts/analytics.js" defer></script>
 
   <title>FVT Robotics</title>
   <meta name="description"
@@ -70,7 +74,7 @@
         </div>
         <div class="w-[90vw] sm:w-50 flex flex-col items-center gap-2">
           <p class="italic">Join our community!</p>
-          <a id="joining-discord-button" href="https://discord.com/invite/dyVrqnzw" target="_blank" class="font-bold flex w-full justify-center gap-2 items-center bg-discord-blurple p-2 rounded-lg h-12 border-b-4 border-discord-blurple-dark"><img src="images/discord-logo-white.png" class="h-[80%] relative"></img>Discord</a>
+          <a data-discord-invite id="joining-discord-button" href="/" target="_blank" class="font-bold flex w-full justify-center gap-2 items-center bg-discord-blurple p-2 rounded-lg h-12 border-b-4 border-discord-blurple-dark"><img src="images/discord-logo-white.png" class="h-[80%] relative"></img>Discord</a>
         </div>
       </div>
     </section>
@@ -268,7 +272,11 @@
       </div>
     </div>
     <p class="sm:hidden text-xs">Header photo courtesy of <a class="underline" href="https://flashgordonphotog.com.au/" target="_blank">Flash Gordon Photography</a></p>
-     
+    
   </footer>
+  <!-- SCRIPTS -->
+  <script src="./scripts/changeSubtitle.js" defer></script>
+  <script src="./scripts/getDiscord.js" defer /></script>
+  <script src="./scripts/analytics.js" defer /></script>
 </body>
 </html>

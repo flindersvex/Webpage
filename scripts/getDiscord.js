@@ -12,7 +12,12 @@ async function getDiscord() {
 
     if (elements.length > 0 && data.instant_invite) {
       elements.forEach(element => {
-        element.href = data.instant_invite;
+        try {
+          element.href = data.instant_invite;
+          console.log("Applied Discord link to element id: " + element.id)
+        } catch (error) {
+          console.error('Failed to change element href to discord link for id: ' + element.id)
+        }
       });
     }
   } catch (error) {
