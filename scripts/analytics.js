@@ -8,7 +8,7 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyA1YlB6ub5GVSBr0uh3CkQ5cv4qC2MsSWY",
-  authDomain: "flindersvex.com",
+  authDomain: "www.flindersvex.com",
   projectId: "fvt-website",
   storageBucket: "fvt-website.firebasestorage.app",
   messagingSenderId: "914827557069",
