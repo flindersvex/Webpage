@@ -1,11 +1,16 @@
 {
   "name": "fvt-website",
   "scripts": {
-    "tw": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch"
+    "tw": "npx @tailwindcss/cli -i ./styles/input.css -o ./styles/output.css --watch",
+    "build": "esbuild scripts/analytics.js --bundle --minify --sourcemap --outfile=scripts/out.js"
+    
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
     "firebase": "^12.9.0",
     "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.3"
   }
 }

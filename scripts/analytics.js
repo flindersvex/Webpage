@@ -6,6 +6,8 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+console.log("I exist!")
+
 const firebaseConfig = {
   apiKey: "AIzaSyA1YlB6ub5GVSBr0uh3CkQ5cv4qC2MsSWY",
   authDomain: "www.flindersvex.com",
@@ -20,14 +22,29 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+
 document.addEventListener("DOMContentLoaded", () => {
     logEvent(analytics, "site_visited")
+    console.log("Added event listener 1!")
+    
+    try {
+        document.getElementById("joining-rubric-button").addEventListener("click", () => {
+            logEvent(analytics, "rubric-visited")
+            console.log("Event 2 fired!")
+        })
+    } catch (e) {
+        console.error("Error appending event to Rubric button: " + e)
+    }
+    
+    try {
+        document.getElementById("joining-discord-button").addEventListener("click", () => {
+            logEvent(analytics, "discord-visited")
+            console.log("Event 3 fired!")
+        })
+    } catch (e) {
+        console.error("Error appending event to Discord button: " + e)
+    }
 })
 
-document.getElementById("joining-rubric-button").addEventListener("click", () => {
-    logEvent(analytics, "rubric-visited")
-})
-document.getElementById("joining-discord-button").addEventListener("click", () => {
-    logEvent(analytics, "discord-visited")
-})
+
 
