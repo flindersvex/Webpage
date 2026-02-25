@@ -1,6 +1,6 @@
 const element = document.getElementById("changingSubtitle")
 
-const words = ["first", "only", "best",]
+const words = ["first", "only", "best"]
 index = 0
 
 element.addEventListener("click", () => {
