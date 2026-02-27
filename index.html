@@ -99,7 +99,8 @@
       <div class="flex flex-col sm:flex-row gap-6 w-full justify-center text-lg">
         <div class="w-full sm:w-50 flex flex-col items-center gap-2">
           <p class="italic text-rubric-pink text-base">Register as a member</p>
-          <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank" data-ga-rubric
+          <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank"
+            data-ga-rubric
             class="font-medium flex w-full select-none justify-center items-center bg-rubric-pink hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-rubric-pink-dark transition-all active:scale-95"><img
               src="images/rubric_logo.png" class="mr-2 w-3.5"></img>Rubric</a>
         </div>
@@ -116,7 +117,7 @@
     </section>
 
     <!-- Calendar -->
-    <section class="flex flex-col lg:flex-row gap-8 items-center">
+    <section class="flex flex-col lg:flex-row gap-8 items-center w-full">
       <div class="flex flex-col gap-4 shrink-0 basis-1/3">
         <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-fvt-white">Upcoming Events</h2>
         <p class="text-base md:text-lg">We're always planning something new. Check out our upcoming events on this
@@ -137,9 +138,16 @@
             Laboratory'<br>Tonsley Innovation District, 4 MAB Eastern Prom, Tonsley SA 5042</p>
         </div>
       </div>
-      <iframe class="rounded-3xl w-full h-80 xl:h-160"
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FAdelaide&showPrint=0&mode=AGENDA&src=YmRjMWYyMWFiZmVjODRhYjlmY2NlZGU2M2Q5NzY2OTI0MjliZDMyMDA4NWU5ODJiZDY4YTVlNzQxM2IzNThmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDFhYjY1MDZmYWVmOTVjNDZiZGE3MWNlN2I2NTdlMDc3MzJkYmQyYWU3ODIzYzkyNDRkOWRiMzc1ZGFlMTU3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%23009688"
-        style="border-width:0" frameborder="0" scrolling="no"></iframe>
+      <div class="w-full h-80 xl:h-160 relative">
+        <iframe class="rounded-2xl xl:rounded-3xl w-full h-full z-10"
+          src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Australia%2FAdelaide&showPrint=0&mode=AGENDA&src=YmRjMWYyMWFiZmVjODRhYjlmY2NlZGU2M2Q5NzY2OTI0MjliZDMyMDA4NWU5ODJiZDY4YTVlNzQxM2IzNThmYkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZDFhYjY1MDZmYWVmOTVjNDZiZGE3MWNlN2I2NTdlMDc3MzJkYmQyYWU3ODIzYzkyNDRkOWRiMzc1ZGFlMTU3NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23f09300&color=%23009688"
+          style="border-width:0" frameborder="0" scrolling="no"></iframe>
+        <div
+          class="absolute w-full h-full top-0 left-0 -z-10 rounded-2xl xl:rounded-3xl flex items-center justify-center border border-dashed border-neutral-500 p-4">
+          <p class="italic text-neutral-500 text-center">Google Calendar failed to load. Check your ad blocker or visit
+            the Discord for event info.</p>
+        </div>
+      </div>
     </section>
 
     <!-- RECENT EVENTS -->
@@ -204,7 +212,8 @@
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-fvt-white">
         Proudly Supported By</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center mx-12 sm:mx-0">
-        <a data-ga-nviLink href="https://www.nviflinders.com.au/" target="_blank" class="max-h-20 mx-auto md:col-span-2 xl:col-span-1">
+        <a data-ga-nviLink href="https://www.nviflinders.com.au/" target="_blank"
+          class="max-h-20 mx-auto md:col-span-2 xl:col-span-1">
           <img src="./images/nvi_logo.svg"
             alt="Logo representing New Venture Institute, accompanied by the Flinders University logo to the left."
             class="w-150 max-h-20 mx-auto md:col-span-2">
@@ -268,8 +277,7 @@
 
       <div class="flex gap-4">
         <!-- FUSA -->
-        <a data-ga-rubric
-          href="https://campus.hellorubric.com/?s=10670" target="_blank"
+        <a data-ga-rubric href="https://campus.hellorubric.com/?s=10670" target="_blank"
           class="h-10 px-4 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <div>Club Page</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
@@ -279,8 +287,7 @@
         </a>
 
         <!-- RobotEvents -->
-        <a data-ga-robotevents 
-          href="https://www.robotevents.com/teams/VURC/FVT" target="_blank"
+        <a data-ga-robotevents href="https://www.robotevents.com/teams/VURC/FVT" target="_blank"
           class="h-10 px-4 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <div>RobotEvents</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
@@ -293,8 +300,7 @@
       <div class="flex gap-4">
 
         <!-- Email (icon-only) -->
-        <a data-ga-mailto 
-          href="mailto:flindersvexteam@gmail.com"
+        <a data-ga-mailto href="mailto:flindersvexteam@gmail.com"
           class="h-10 aspect-square p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 ">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -303,8 +309,7 @@
         </a>
 
         <!-- Discord (icon-only) -->
-        <a data-ga-discord
-          data-discord-invite href="/" target="_blank"
+        <a data-ga-discord data-discord-invite href="/" target="_blank"
           class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -313,8 +318,7 @@
         </a>
 
         <!-- GitHub (icon-only) -->
-        <a data-ga-github
-          href="https://github.com/FlindersVEXTeam" target="_blank"
+        <a data-ga-github href="https://github.com/FlindersVEXTeam" target="_blank"
           class="h-10 p-2 flex gap-2 items-center aspect-square bg-neutral-900 rounded-xl hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
             xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -323,8 +327,7 @@
         </a>
 
         <!-- Instagram (icon-only) -->
-        <a data-ga-instagram
-          href="https://www.instagram.com/flindersvex/" target="_blank"
+        <a data-ga-instagram href="https://www.instagram.com/flindersvex/" target="_blank"
           class="h-10 aspect-square p-2 flex gap-2 items-center bg-neutral-900 rounded-xl hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
             xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"

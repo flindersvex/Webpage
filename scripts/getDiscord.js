@@ -30,6 +30,8 @@ async function getDiscord() {
         element.classList.remove("hover:text-fvt-orange")
         element.classList.remove("hover:bg-orange-950")
         element.classList.add("text-neutral-500")
+        element.classList.add("bg-neutral-900")
+        element.classList.add("border-neutral-800")
         element.setAttribute("title", "Unable to contact Discord API, check out our other socials!")
       })
     }
