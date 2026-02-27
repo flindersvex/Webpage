@@ -33,7 +33,7 @@
     content="Flinders VEX Team (FVT) is a VEX U Robotics Competition team from South Australia." />
   <meta property="og:url" content="https://flindersvex.com/" />
   <meta property="og:image" content="https://flindersvex.com/images/hero.jpg" />
-  <meta property="og:image:alt" content="Four people standing next and looking at a VEX Robotics field.">
+  <meta property="og:image:alt" content="Four team members standing next and looking at a VEX Robotics field.">
 </head>
 
 <body class="bg-neutral-950 text-neutral-50 font-[figtree] selection:bg-fvt-orange selection:text-neutral-900">
@@ -73,7 +73,8 @@
 
     <div class="hidden sm:flex absolute bottom-10 right-10 gap-1 text-xs justify-center items-center text-neutral-500">
       <p>Photo courtesy of</p>
-      <a class="flex gap-1 items-center hover:text-neutral-300 transition-all active:scale-95 underline"
+      <a data-ga-flashgordon
+        class="flex gap-1 items-center hover:text-neutral-300 transition-all active:scale-95 underline"
         href="https://flashgordonphotog.com.au/" target="_blank">
         <div>Flash Gordon Photography</div>
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="h-2 w-auto">
@@ -98,13 +99,13 @@
       <div class="flex flex-col sm:flex-row gap-6 w-full justify-center text-lg">
         <div class="w-full sm:w-50 flex flex-col items-center gap-2">
           <p class="italic text-rubric-pink text-base">Register as a member</p>
-          <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank"
+          <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank" data-ga-rubric
             class="font-medium flex w-full select-none justify-center items-center bg-rubric-pink hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-rubric-pink-dark transition-all active:scale-95"><img
               src="images/rubric_logo.png" class="mr-2 w-3.5"></img>Rubric</a>
         </div>
         <div class="w-full sm:w-50 flex flex-col items-center gap-2">
           <p class="italic text-discord-blurple text-base">Chat with the club!</p>
-          <a data-discord-invite id="joining-discord-button" href="/" target="_blank"
+          <a data-discord-invite data-ga-discord id="joining-discord-button" href="/" target="_blank"
             class="font-medium flex w-full select-none justify-center gap-2 items-center bg-discord-blurple hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-discord-blurple-dark transition-all active:scale-95"><svg
               xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path fill="currentColor"
@@ -124,6 +125,7 @@
         <p class="text-base md:text-lg">Anyone is welcome to attend our team workshops in room T1-4.19 at Tonsley.</p>
         <div class="flex flex-col gap-2 sm:gap-4">
           <a href="https://www.flinders.edu.au/content/dam/documents/campus/maps/tonsley-maps.pdf" target="_blank"
+            data-ga-mapDownload
             class="h-10 px-4 select-none flex gap-2 justify-center items-center font-medium text-base md:text-lg sm:w-fit bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
             <div>Tonsley Map (PDF)</div>
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
@@ -132,7 +134,7 @@
             </svg>
           </a>
           <p class="text-sm text-neutral-500 text-center sm:text-left">Floor 4, T1-4.19 'AI and Robotics Research
-            Laboratory'</p>
+            Laboratory'<br>Tonsley Innovation District, 4 MAB Eastern Prom, Tonsley SA 5042</p>
         </div>
       </div>
       <iframe class="rounded-3xl w-full h-80 xl:h-160"
@@ -202,17 +204,17 @@
       <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-fvt-white">
         Proudly Supported By</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center mx-12 sm:mx-0">
-        <a href="https://www.nviflinders.com.au/" target="_blank" class="max-h-20 mx-auto md:col-span-2 xl:col-span-1">
+        <a data-ga-nviLink href="https://www.nviflinders.com.au/" target="_blank" class="max-h-20 mx-auto md:col-span-2 xl:col-span-1">
           <img src="./images/nvi_logo.svg"
             alt="Logo representing New Venture Institute, accompanied by the Flinders University logo to the left."
             class="w-150 max-h-20 mx-auto md:col-span-2">
         </a>
-        <a href="https://datta.sa.edu.au/" target="_blank" class="max-h-20 mx-auto">
+        <a data-ga-dattaLink href="https://datta.sa.edu.au/" target="_blank" class="max-h-20 mx-auto">
           <img src="./images/dattasa_logo.svg"
             alt="Logo representing the Design and Technology Teachers Association South Australia."
             class="w-100 max-h-20">
         </a>
-        <a href="https://www.onshape.com/en/" target="_blank" class="max-h-20 mx-auto">
+        <a data-ga-onshapeLink href="https://www.onshape.com/en/" target="_blank" class="max-h-20 mx-auto">
           <img src="./images/onshape_logo.svg" alt="Logo representing Onshape." class="w-100 max-h-20">
         </a>
       </div>
@@ -266,7 +268,8 @@
 
       <div class="flex gap-4">
         <!-- FUSA -->
-        <a href="https://campus.hellorubric.com/?s=10670" target="_blank"
+        <a data-ga-rubric
+          href="https://campus.hellorubric.com/?s=10670" target="_blank"
           class="h-10 px-4 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <div>Club Page</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
@@ -276,7 +279,8 @@
         </a>
 
         <!-- RobotEvents -->
-        <a href="https://www.robotevents.com/teams/VURC/FVT" target="_blank"
+        <a data-ga-robotevents 
+          href="https://www.robotevents.com/teams/VURC/FVT" target="_blank"
           class="h-10 px-4 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <div>RobotEvents</div>
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="w-3">
@@ -289,7 +293,8 @@
       <div class="flex gap-4">
 
         <!-- Email (icon-only) -->
-        <a href="mailto:flindersvexteam@gmail.com"
+        <a data-ga-mailto 
+          href="mailto:flindersvexteam@gmail.com"
           class="h-10 aspect-square p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 ">
           <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -298,7 +303,8 @@
         </a>
 
         <!-- Discord (icon-only) -->
-        <a data-discord-invite href="/" target="_blank"
+        <a data-ga-discord
+          data-discord-invite href="/" target="_blank"
           class="h-10 p-2 flex gap-2 items-center bg-neutral-900 rounded-xl  hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -307,7 +313,8 @@
         </a>
 
         <!-- GitHub (icon-only) -->
-        <a href="https://github.com/FlindersVEXTeam" target="_blank"
+        <a data-ga-github
+          href="https://github.com/FlindersVEXTeam" target="_blank"
           class="h-10 p-2 flex gap-2 items-center aspect-square bg-neutral-900 rounded-xl hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
             xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -316,7 +323,8 @@
         </a>
 
         <!-- Instagram (icon-only) -->
-        <a href="https://www.instagram.com/flindersvex/" target="_blank"
+        <a data-ga-instagram
+          href="https://www.instagram.com/flindersvex/" target="_blank"
           class="h-10 aspect-square p-2 flex gap-2 items-center bg-neutral-900 rounded-xl hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95"><svg
             xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
             <path fill="currentColor"
@@ -327,7 +335,8 @@
     </div>
     <div class="flex gap-1 sm:hidden text-xs w-full justify-center items-center text-neutral-500">
       <p>Header photo courtesy of</p>
-      <a class="flex gap-1 items-center hover:text-neutral-300 transition-all active:scale-95 underline"
+      <a data-ga-flashgordon
+        class="flex gap-1 items-center hover:text-neutral-300 transition-all active:scale-95 underline"
         href="https://flashgordonphotog.com.au/" target="_blank">
         <div>Flash Gordon Photography</div>
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 512 512" class="h-2 w-auto">

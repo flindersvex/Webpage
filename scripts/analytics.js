@@ -22,28 +22,33 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+function add_ga_tag(selector, event_name) {
+    try {
+        document.querySelectorAll(`[${selector}]`).forEach(element => {
+            // console.log(`bound to ${element.href}`)// only for testing
+            element.addEventListener("click", () => {
+                logEvent(analytics, event_name)
+            })
+        })
+    } catch (e) {
+        console.error(`Error appending event ${event_name} to selector ${selector}: ` + e)
+    }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     logEvent(analytics, "site_visited")
-    console.log("Added event listener 1!")
     
-    try {
-        document.getElementById("joining-rubric-button").addEventListener("click", () => {
-            logEvent(analytics, "rubric-visited")
-            console.log("Event 2 fired!")
-        })
-    } catch (e) {
-        console.error("Error appending event to Rubric button: " + e)
-    }
-    
-    try {
-        document.getElementById("joining-discord-button").addEventListener("click", () => {
-            logEvent(analytics, "discord-visited")
-            console.log("Event 3 fired!")
-        })
-    } catch (e) {
-        console.error("Error appending event to Discord button: " + e)
-    }
+    add_ga_tag("data-ga-rubric", "rubric-visited")
+    add_ga_tag("data-ga-discord", "discord-visited")
+    add_ga_tag("data-ga-mapDownload", "map-downloaded")
+    add_ga_tag("data-ga-nviLink", "nvi-visited")
+    add_ga_tag("data-ga-dattaLink", "datta-visited")
+    add_ga_tag("data-ga-onshapeLink", "onshape-visited")
+    add_ga_tag("data-ga-robotevents", "robotevents-visited")
+    add_ga_tag("data-ga-mailto", "mailto-clicked")
+    add_ga_tag("data-ga-github", "github-visited")
+    add_ga_tag("data-ga-instagram", "instagram-visited")
+    add_ga_tag("data-ga-flashgordon", "flashgordon-visited")
 })
 
 
