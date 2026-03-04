@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     add_ga_tag("data-ga-rubric", "rubric-visited")
     add_ga_tag("data-ga-discord", "discord-visited")
+    add_ga_tag("data-ga-introtovex", "intro-to-vex-visited")
     add_ga_tag("data-ga-mapDownload", "map-downloaded")
     add_ga_tag("data-ga-nviLink", "nvi-visited")
     add_ga_tag("data-ga-dattaLink", "datta-visited")
