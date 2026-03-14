@@ -642,8 +642,14 @@
   .pt-\[50dvh\] {
     padding-top: 50dvh;
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
+  }
+  .pb-40 {
+    padding-bottom: calc(var(--spacing) * 40);
   }
   .text-center {
     text-align: center;
@@ -740,6 +746,9 @@
   .text-neutral-200 {
     color: var(--color-neutral-200);
   }
+  .text-neutral-300 {
+    color: var(--color-neutral-300);
+  }
   .text-neutral-400 {
     color: var(--color-neutral-400);
   }
@@ -816,6 +825,13 @@
       @media (hover: hover) {
         border-bottom-style: var(--tw-border-style);
         border-bottom-width: 0px;
+      }
+    }
+  }
+  .hover\:border-fvt-orange {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-fvt-orange);
       }
     }
   }
