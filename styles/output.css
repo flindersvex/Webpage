@@ -61,6 +61,7 @@
     --color-fvt-white: #ffffff;
     --color-fvt-dark-grey: #101010;
     --color-fvt-orange: #ff9401;
+    --color-fvt-red: #ff3636;
     --color-fvt-orange-l: #ffa528;
     --color-rubric-pink: #EA2771;
     --color-discord-blurple: #5865F2;
@@ -583,6 +584,9 @@
   .border-fvt-orange {
     border-color: var(--color-fvt-orange);
   }
+  .border-fvt-red {
+    border-color: var(--color-fvt-red);
+  }
   .border-neutral-500 {
     border-color: var(--color-neutral-500);
   }
@@ -745,6 +749,9 @@
   }
   .text-fvt-orange {
     color: var(--color-fvt-orange);
+  }
+  .text-fvt-white {
+    color: var(--color-fvt-white);
   }
   .text-neutral-50 {
     color: var(--color-neutral-50);
