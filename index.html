@@ -16,9 +16,9 @@
   <link rel="preload" href="./fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="./fonts/figtree.css">
 
-  <link rel="icon" type="image/png" href="./favicon.png">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./images/fvt/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="./images/fvt/favicon.svg">
+  <link rel="apple-touch-icon" href="./images/fvt/apple-touch-icon.png">
 
   <script src="./scripts/out.js" type="module"></script>
 
@@ -50,13 +50,13 @@
 
   <!-- HERO -->
   <header class="relative">
-    <img src="./images/hero.jpg" alt="Four club members cheering next to and looking at a VEX Robotics field."
+    <img src="./images/fvt/hero.jpg" alt="Four club members cheering next to and looking at a VEX Robotics field."
       class="opacity-30 w-full">
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-neutral-950 to-transparent"></div>
 
     <div class="absolute inset-0 flex items-center justify-center text-center">
       <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8 select-none">
-        <img src="./favicon.svg"
+        <img src="./images/fvt/favicon.svg"
           alt="White letters 'FVT', with a black outline and shadow on top of an orange to red gradient. The logo representing Flinders VEX Team."
           class="h-16 md:h-30 translate-y-0.5">
         <div class="flex flex-col items-baseline">
@@ -112,16 +112,14 @@
           <a id="joining-rubric-button" href="https://campus.hellorubric.com/?tab=memberships&s=10670" target="_blank"
             data-ga-rubric
             class="font-medium flex w-full select-none justify-center items-center bg-rubric-pink hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-rubric-pink-dark transition-all active:scale-95"><img
-              src="images/rubric_logo.png" class="mr-2 w-3.5"></img>Rubric</a>
+              src="images/symbols/rubric_white.png" class="mr-2 w-3.5"></img>Rubric</a>
         </div>
         <div class="w-full sm:w-50 flex flex-col items-center gap-2">
           <p class="italic text-discord-blurple text-base">Chat with the club!</p>
           <a data-discord-invite data-ga-discord id="joining-discord-button" href="/" target="_blank"
-            class="font-medium flex w-full select-none justify-center gap-2 items-center bg-discord-blurple hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-discord-blurple-dark transition-all active:scale-95"><svg
-              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12" />
-            </svg>Discord</a>
+            class="font-medium flex w-full select-none justify-center gap-2 items-center bg-discord-blurple hover:border-b-0 p-2 rounded-xl h-12 border-b-4 border-discord-blurple-dark transition-all active:scale-95"><img
+              src="images/symbols/discord_white.svg" class="w-6"></img>
+            Discord</a>
         </div>
       </div>
     </section>
@@ -220,19 +218,21 @@
               On 18 March 2026, we hosted an Introduction to PROS workshop, covering the basics of creating programs for
               VEX V5 robots. The session introduced fundamental PROS concepts and C/C++ programming, with hands-on
               experience using the robots and software.
-              
+
               We also used the workshop to onboard members to our Notion, Onshape, and GitHub, helping new team members
               get set up and ask questions about how we operate.
 
               <br><br>
 
-              Feel free to have a look at the code from this session on our <a class="text-fvt-orange underline" target="_blank" href="https://github.com/flindersvex/Intro-To-PROS">GitHub</a>, and join our <a data-ga-introtovex="" data-discord-invite href="/" target="_blank"
+              Feel free to have a look at the code from this session on our <a class="text-fvt-orange underline"
+                target="_blank" href="https://github.com/flindersvex/Intro-To-PROS">GitHub</a>, and join our <a
+                data-ga-introtovex="" data-discord-invite href="/" target="_blank"
                 class="text-fvt-orange underline">Discord</a> to stay updated on future workshops and events!
           </hgroup>
         </div>
         <div class="max-h-full relative shrink-0 basis-1/2">
-          <img src="./images/2026/intro_to_pros.png"
-            alt="The poster for the 'Intro to VEX' workshop, featuring a picture of a VEX robot and event details."
+          <img src="./images/blog/2026/intro_to_pros_repo_sc.png"
+            alt="Screenshot of the GitHub repository created for the 'Intro to PROS' workshop."
             class="object-cover object-left rounded-b-3xl lg:rounded-none lg:rounded-r-3xl lg:h-full w-full">
         </div>
 
@@ -266,7 +266,7 @@
           </hgroup>
         </div>
         <div class="max-h-full relative shrink-0 basis-1/2">
-          <img src="./images/2026/FVT-Intro-to-VEX-Superscreen-HD.png"
+          <img src="./images/blog/2026/intro_to_vex_superscreen.png"
             alt="The poster for the 'Intro to VEX' workshop, featuring a picture of a VEX robot and event details."
             class="object-cover rounded-b-3xl lg:rounded-none lg:rounded-r-3xl lg:h-full w-full">
         </div>
@@ -318,7 +318,7 @@
 
         </div>
         <div class="max-h-full relative shrink-0 basis-1/2">
-          <img src="./images/nationals2025lit.jpg" alt="Picture of a black and yellow robot."
+          <img src="./images/blog/2025/push_back_smallbot.jpg" alt="Picture of a black and yellow robot."
             class="object-cover rounded-b-3xl lg:rounded-none lg:rounded-r-3xl lg:h-full w-full">
         </div>
 
@@ -332,19 +332,19 @@
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 items-center mx-12 sm:mx-0">
         <a data-ga-nviLink href="https://www.nviflinders.com.au/" target="_blank"
           class="max-h-20 mx-auto md:col-span-2 xl:col-span-1 hover:opacity-80 active:scale-95 transition-all">
-          <img src="./images/nvi_logo.svg"
+          <img src="./images/sponsors/nvi_logo.svg"
             alt="Logo representing New Venture Institute, accompanied by the Flinders University logo to the left."
             class="w-150 max-h-20 mx-auto md:col-span-2">
         </a>
         <a data-ga-dattaLink href="https://datta.sa.edu.au/" target="_blank"
           class="max-h-20 mx-auto hover:opacity-80 active:scale-95 transition-all">
-          <img src="./images/dattasa_logo.svg"
+          <img src="./images/sponsors/dattasa_logo.svg"
             alt="Logo representing the Design and Technology Teachers Association South Australia."
             class="w-100 max-h-20">
         </a>
         <a data-ga-onshapeLink href="https://www.onshape.com/en/" target="_blank"
           class="max-h-20 mx-auto hover:opacity-80 active:scale-95 transition-all">
-          <img src="./images/onshape_logo.svg" alt="Logo representing Onshape." class="w-100 max-h-20">
+          <img src="./images/sponsors/onshape_logo.svg" alt="Logo representing Onshape." class="w-100 max-h-20">
         </a>
       </div>
 
@@ -356,7 +356,7 @@
     class="flex flex-col gap-6 lg:flex-row items-center justify-between bg-fvt-dark-grey border-neutral-900 border rounded-3xl py-4 my-4 mx-4 px-4 lg:mx-12 xl:mx-40 2xl:mx-60 select-none">
     <a href="/"
       class="flex gap-2 items-center hover:text-fvt-orange hover:bg-orange-950 transition-all active:scale-95 h-10 px-4 rounded-xl flex-nowrap whitespace-nowrap">
-      <img src="./favicon.svg"
+      <img src="./images/fvt/favicon.svg"
         alt="White letters 'FVT', with a black outline and shadow on top of an orange to red gradient. The logo representing Flinders VEX Team."
         class="h-6">
       <p class="font-medium text-lg select-none">Flinders VEX Team <span

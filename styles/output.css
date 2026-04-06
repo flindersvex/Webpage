@@ -293,6 +293,9 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mr-1 {
+    margin-right: calc(var(--spacing) * 1);
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -362,6 +365,12 @@
   .w-3\.5 {
     width: calc(var(--spacing) * 3.5);
   }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
@@ -397,9 +406,6 @@
   }
   .basis-1\/3 {
     flex-basis: calc(1/3 * 100%);
-  }
-  .basis-2\/3 {
-    flex-basis: calc(2/3 * 100%);
   }
   .translate-y-0\.5 {
     --tw-translate-y: calc(var(--spacing) * 0.5);
